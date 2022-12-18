@@ -1,16 +1,23 @@
+:root {
+    --var1: #EDE8DD;
+}
+
 body {
-    color: #EDE8DD;
+    color: var(--var1);
     background-color: black;
     font-family: 'IBM Plex Mono', sans-serif, monospace;
-    text-align: center;
-
-    display: flex;
-    align-items: center;
-    flex-direction: column;
 }
 
 h1 {
     font-weight: 600;
+}
+
+.homepage {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
 }
 
 .logo {
@@ -48,7 +55,38 @@ h1 {
 
 .nav {
     display: flex;
+    border: 6px solid #323F4A;
+    padding: 5px;
+
     justify-content: flex-start;
+    align-items: center;
 }
 
+.icon {
+    width: 100px;
+    margin: 5px 15px 0 0;
+}
 
+.solution-display {
+    display: flex;
+    align-items: initial;
+    justify-content: space-between;
+    border: 1px solid gray;
+    border-bottom: 0;
+    border-top: 0;
+    padding: 20px;
+}
+
+.my-code {
+    border-right: 1px solid gray;
+    padding-right: 20px;
+}
+
+.footer {
+    background: #323F4A;
+    padding: 10px;
+}
+
+a:visited {
+    color: var(--var1);
+}
