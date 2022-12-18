@@ -1,5 +1,8 @@
 :root {
     --var1: #EDE8DD;
+    --var2: #323F4A;
+    --var3: #CBD1E1;
+    --var4: #1E262C;
 }
 
 body {
@@ -10,6 +13,10 @@ body {
 
 h1 {
     font-weight: 600;
+}
+
+a, a:visited {
+    color: var(--var1);
 }
 
 .homepage {
@@ -54,9 +61,10 @@ h1 {
 }
 
 .nav {
+    font-weight: 600;
     display: flex;
-    border: 6px solid #323F4A;
     padding: 5px;
+    margin-bottom: 5px;
 
     justify-content: flex-start;
     align-items: center;
@@ -71,22 +79,97 @@ h1 {
     display: flex;
     align-items: initial;
     justify-content: space-between;
-    border: 1px solid gray;
-    border-bottom: 0;
-    border-top: 0;
-    padding: 20px;
+}
+
+.code-heading {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    color: var(--var3);
+    background-color: var(--var2);
+    padding: 5px;
 }
 
 .my-code {
-    border-right: 1px solid gray;
-    padding-right: 20px;
+    border-right: 2px solid var(--var2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.my-solution-image {
+    padding: 28px;
 }
 
 .footer {
-    background: #323F4A;
+    display: flex;
+    justify-content: space-between;
+    background: var(--var2);
     padding: 10px;
 }
 
-a:visited {
+
+.dropdown {
+    background: var(--var2);
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    padding-right: 2rem;
+
+
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+    display: inline-block;
+
+    background-image: url(/images/down-arrow.png);
+    background-size: .8rem;
+    background-position: center right .5rem;
+    background-repeat: no-repeat;
+}
+.dropdown:hover {
+    top: -2px;
+}
+
+.dropbtn {
     color: var(--var1);
+    font-family: 'IBM Plex Mono', sans-serif, monospace;
+    font-weight: 600;
+    background: var(--var2);
+    border: none;
+    cursor: grab;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border: 1px solid var(--var2);
+    border-radius: 4px;
+    padding: none;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: all .1s ease-in-out;
+}
+
+.dropdown a {
+    background: var(--var2);
+    color: var(--var1);
+}
+.dropdown a:hover {background-color: var(--var4);}
+
+.show {
+    display:block;
+    top: 36px;
+}
+
+.char-count {
+    text-transform: uppercase;
 }

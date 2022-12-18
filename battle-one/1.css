@@ -1,0 +1,13 @@
+.one_body {
+    width: 400px;
+    height: 300px;
+
+    background: #5D3A3A;
+    margin: 0;
+}
+
+.one_div {
+    width: 200px;
+    height: 200px;
+    background: #B5E0BA;
+}
