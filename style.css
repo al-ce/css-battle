@@ -1,0 +1,54 @@
+body {
+    color: #EDE8DD;
+    background-color: black;
+    font-family: 'IBM Plex Mono', sans-serif, monospace;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+.logo {
+    width: 20%;
+}
+
+.previews-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 800px;
+}
+
+.preview {
+    position: relative;
+    margin: 10px;
+    width: 20%;
+}
+.preview-text {
+    position: absolute;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 2px;
+    top: 2px;
+    right: 2px;
+
+}
+.preview-image {
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
