@@ -1,0 +1,23 @@
+.four_body {
+    width: 400px;
+    height: 300px;
+
+    background-color: #62306D;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap-reverse;
+    margin: 0px;
+}
+div.four_c, div.four_b {
+    width: 100px;
+    height: 100px;
+    margin: 0px 50px;
+}
+.four_c {
+    background: #F7EC7D;
+    border-radius: 50% 50% 0% 0%;
+}
+.four_b {
+    border-radius: 0% 0% 50% 50%;
+}

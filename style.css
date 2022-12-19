@@ -5,6 +5,22 @@
     --var4: #1E262C;
 }
 
+* {
+scrollbar-width: thin;
+scrollbar-color: gray black;
+}
+*::-webkit-scrollbar {
+  width: 7px;               /* width of the entire scrollbar */
+}
+*::-webkit-scrollbar-track {
+  background: black;        /* color of the tracking area */
+}
+*::-webkit-scrollbar-thumb {
+  background-color: gray;    /* color of the scroll thumb */
+  border-radius: 5px;       /* roundness of the scroll thumb */
+  border: 1px solid black;  /* creates padding around scroll thumb */
+}
+
 body {
     color: var(--var1);
     background-color: black;
@@ -29,6 +45,7 @@ a, a:visited {
 
 .logo {
     width: 20%;
+    alt: "CSS Battle Logo. Two curly braces enclosing an image of crossed swords followed by CSSBattle. Yellow on black.";
 }
 
 .previews-container {
@@ -43,6 +60,7 @@ a, a:visited {
     position: relative;
     margin: 10px;
     width: 20%;
+    transition: all .2s;
 }
 .preview-text {
     position: absolute;
@@ -52,12 +70,17 @@ a, a:visited {
     padding: 2px;
     top: 2px;
     right: 2px;
+    z-index: 3;
 
 }
 .preview-image {
+    z-index: 2;
     border: 1px solid black;
     border-radius: 8px;
     width: 100%;
+}
+.preview:hover {
+    transform: scale(1.15);
 }
 
 .nav {
@@ -69,6 +92,12 @@ a, a:visited {
     justify-content: flex-start;
     align-items: center;
 }
+.nav a {
+    transition: transform ease 0.1s;
+}
+.nav a:hover {
+    transform: scale(1.15);
+}
 
 .icon {
     width: 100px;
@@ -77,7 +106,7 @@ a, a:visited {
 
 .solution-display {
     display: flex;
-    align-items: initial;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -95,10 +124,15 @@ a, a:visited {
     padding: 20px;
     display: flex;
     flex-direction: column;
+    min-width: 600px;
+    max-height: 900px;
 }
 
 .my-solution-image {
-    padding: 28px;
+    display: flex;
+    justify-content: center;
+    min-width: 50%;
+    padding-top: 28px;
 }
 
 .footer {
@@ -109,14 +143,21 @@ a, a:visited {
 }
 
 
-.dropdown {
+.dropbtn {
+    color: var(--var1);
     background: var(--var2);
-    padding: 5px 10px;
+    font-family: 'IBM Plex Mono', sans-serif, monospace;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: grab;
+
+    padding: 10px 15px;
+    border: none;
     border-radius: 4px;
+
     display: inline-flex;
     align-items: center;
     padding-right: 2rem;
-
 
     position: relative;
     top: 0;
@@ -128,17 +169,8 @@ a, a:visited {
     background-position: center right .5rem;
     background-repeat: no-repeat;
 }
-.dropdown:hover {
+.dropbtn:hover {
     top: -2px;
-}
-
-.dropbtn {
-    color: var(--var1);
-    font-family: 'IBM Plex Mono', sans-serif, monospace;
-    font-weight: 600;
-    background: var(--var2);
-    border: none;
-    cursor: grab;
 }
 
 .dropdown-content {
@@ -163,11 +195,13 @@ a, a:visited {
     background: var(--var2);
     color: var(--var1);
 }
-.dropdown a:hover {background-color: var(--var4);}
+.dropdown a:hover {
+    background-color: var(--var4);
+}
 
 .show {
     display:block;
-    top: 36px;
+    top: 58px;
 }
 
 .char-count {

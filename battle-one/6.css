@@ -1,0 +1,22 @@
+#six_body, #six_o {
+width: 400px;
+height: 300px;
+background: #e3516e;
+display: flex;
+justify-content: center;
+align-content: center;
+flex-wrap: wrap;
+}
+#six_o {
+width: 200px;
+height: 200px;
+border-radius: 50%;
+overflow: hidden;
+}
+#six_o div {
+width: 100px;
+height: 100px;
+}
+#six_a {background: #51B5A9;}
+#six_b {background: #FADE8B;}
+#six_c {background: #f7f3d7;}

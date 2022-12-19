@@ -1,0 +1,44 @@
+.ten_body {
+    width: 400px;
+    height: 300px;
+    position: relative;
+    z-index: -2;
+
+    background: #62306d;
+}
+.ten_spheres,
+.ten_cloaks {
+    width: 300px;
+    height: 200px;
+    margin: 50px auto;
+
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+.ten_spheres div, .ten_cloaks div {
+    width: 100px;
+    height: 100px;
+}
+.ten_spheres div {
+    box-sizing: border-box;
+    background: #e38f66;
+    border: 20px solid #aa445f;
+    border-radius: 50%;
+}
+.ten_spheres div:first-child {
+    margin-right: 100px;
+}
+.ten_spheres div:last-child {
+    background: #aa445f;
+    border-color: #e38f66;
+}
+.ten_cloaks {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+.ten_cloaks div {
+    background: #f7ec7d;
+    z-index: -1;
+}

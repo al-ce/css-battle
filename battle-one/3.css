@@ -1,0 +1,32 @@
+.three_body {
+    /* defaults and overrides. Not part of solution*/
+    width: 400px;
+    height: 300px;
+    display: flex;
+
+    background: #6592CF;
+}
+.three_c {
+    border-radius: 50%;
+}
+.three_o, .three_m {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background: #243D83;
+}
+.three_o {
+    width: 300px;
+    margin: 75px auto;
+}
+
+.three_m {
+    width: 150px;
+    border: 50px solid #6592CF;
+}
+.three_i {
+    width: 50px;
+    height: 50px;
+    background: #EEB850;
+}
