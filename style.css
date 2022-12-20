@@ -1,239 +1,253 @@
 :root {
-    --var1: #EDE8DD;
-    --var2: #323F4A;
-    --var3: #CBD1E1;
-    --var4: #1E262C;
+  --var1: #ede8dd;
+  --var2: #323f4a;
+  --var3: #cbd1e1;
+  --var4: #1e262c;
 }
 
 * {
-scrollbar-width: thin;
-scrollbar-color: gray black;
+  scrollbar-width: thin;
+  scrollbar-color: gray black;
 }
 *::-webkit-scrollbar {
-  width: 7px;               /* width of the entire scrollbar */
+  width: 7px; /* width of the entire scrollbar */
 }
 *::-webkit-scrollbar-track {
-  background: black;        /* color of the tracking area */
+  background: black; /* color of the tracking area */
 }
 *::-webkit-scrollbar-thumb {
-  background-color: gray;    /* color of the scroll thumb */
-  border-radius: 5px;       /* roundness of the scroll thumb */
-  border: 1px solid black;  /* creates padding around scroll thumb */
+  background-color: gray; /* color of the scroll thumb */
+  border-radius: 5px; /* roundness of the scroll thumb */
+  border: 1px solid black; /* creates padding around scroll thumb */
 }
 
 body {
-    color: var(--var1);
-    background-color: #171D23;
-    font-family: 'IBM Plex Mono', sans-serif, monospace;
+  color: var(--var1);
+  background-color: #171d23;
+  font-family: "IBM Plex Mono", sans-serif, monospace;
 }
 
 h1 {
-    font-weight: 600;
+  font-weight: 600;
 }
 
-a, a:visited {
-    color: var(--var1);
+a,
+a:visited {
+  color: var(--var1);
 }
 
 .homepage {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-
 svg {
-    width: 15px;
-    height: 15px;
+  width: 15px;
+  height: 15px;
 }
 
 .logo {
-    width: 20%;
-    alt: "CSS Battle Logo. Two curly braces enclosing an image of crossed swords followed by CSSBattle. Yellow on black.";
+  width: 20%;
+  alt: "CSS Battle Logo. Two curly braces enclosing an image of crossed swords followed by CSSBattle. Yellow on black.";
 }
 
 .info {
-    position: relative;
+  position: relative;
 }
 .explainer {
-    background: var(--var2);
-    text-align:left;
-    box-sizing: border-box;
-    width: 400px;
-    height: 250px;
-    border: 2px gray solid;
-    border-radius: 8px;
-    padding: 2px 15px;
-    visibility: hidden;
-    display: none;
-    position: absolute;
-    top: 25px;
-    left: 200px;
-    z-index: 99;
+  background: var(--var2);
+  text-align: left;
+  box-sizing: border-box;
+  width: 400px;
+  height: 250px;
+  border: 2px gray solid;
+  border-radius: 8px;
+  padding: 2px 15px;
+  visibility: hidden;
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: 200px;
+  z-index: 99;
 }
 .info:hover .explainer {
-    visibility: visible;
-    display: block;
+  visibility: visible;
+  display: block;
 }
 
 .previews-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 800px;
 }
 
 .preview {
-    position: relative;
-    margin: 10px;
-    width: 20%;
-    transition: all .2s;
+  position: relative;
+  margin: 10px;
+  width: 20%;
+  transition: all 0.2s;
 }
 .preview-text {
-    position: absolute;
-    background-color: black;
-    border: 1px solid black;
-    border-radius: 4px;
-    padding: 2px;
-    top: 2px;
-    right: 2px;
-    z-index: 3;
-
+  position: absolute;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 2px;
+  top: 2px;
+  right: 2px;
+  z-index: 3;
 }
 .preview-image {
-    z-index: 2;
-    border: 1px solid black;
-    border-radius: 8px;
-    width: 100%;
+  z-index: 2;
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 100%;
 }
 .preview:hover {
-    transform: scale(1.15);
+  transform: scale(1.15);
 }
 
 .nav {
-    font-weight: 600;
-    display: flex;
-    padding: 5px;
-    margin-bottom: 5px;
+  font-weight: 600;
+  display: flex;
+  padding: 5px;
+  margin-bottom: 5px;
 
-    justify-content: flex-start;
-    align-items: center;
+  justify-content: flex-start;
+  align-items: center;
 }
 .nav a {
-    transition: transform ease 0.1s;
+  transition: transform ease 0.1s;
 }
 .nav a:hover {
-    transform: scale(1.15);
+  transform: scale(1.15);
 }
 
 .icon {
-    width: 100px;
-    margin: 5px 15px 0 0;
+  width: 100px;
+  margin: 5px 15px 0 0;
 }
 
 .solution-display {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  max-width: 1400px;
 }
 
 .code-heading {
-    display: flex;
-    justify-content: space-between;
-    text-transform: uppercase;
-    color: var(--var3);
-    background-color: var(--var2);
-    padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  color: var(--var3);
+  background-color: var(--var2);
+  padding: 5px;
 }
 
 .my-code {
-    border-right: 2px solid var(--var2);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    min-width: 600px;
-    max-height: 900px;
+  border-right: 2px solid var(--var2);
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  max-width: 450px;
+  max-height: 900px;
+}
+
+pre {
+  max-height: 800px;
+}
+
+@media (min-width: 600px) {
+  .my-code {
+    width: 450px;
+  }
+}
+@media (min-width: 1400px) {
+  .my-code {
+    max-width: none;
+    width: 600px;
+  }
 }
 
 .my-solution-image {
-    display: flex;
-    justify-content: center;
-    min-width: 50%;
-    padding-top: 28px;
+  display: flex;
+  justify-content: center;
+  min-width: 50%;
+  padding-top: 28px;
 }
 
 .footer {
-    display: flex;
-    justify-content: space-between;
-    background: var(--var2);
-    padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  background: var(--var2);
+  padding: 10px;
 }
-
 
 .dropbtn {
-    color: var(--var1);
-    background: var(--var2);
-    font-family: 'IBM Plex Mono', sans-serif, monospace;
-    font-size: 1em;
-    font-weight: 600;
-    cursor: grab;
+  color: var(--var1);
+  background: var(--var2);
+  font-family: "IBM Plex Mono", sans-serif, monospace;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: grab;
 
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
 
-    display: inline-flex;
-    align-items: center;
-    padding-right: 2rem;
+  display: inline-flex;
+  align-items: center;
+  padding-right: 2rem;
 
-    position: relative;
-    top: 0;
-    transition: top ease 0.5s;
-    display: inline-block;
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+  display: inline-block;
 
-    background-image: url(/images/down-arrow.png);
-    background-size: .8rem;
-    background-position: center right .5rem;
-    background-repeat: no-repeat;
+  background-image: url(/images/down-arrow.png);
+  background-size: 0.8rem;
+  background-position: center right 0.5rem;
+  background-repeat: no-repeat;
 }
 .dropbtn:hover {
-    top: -2px;
+  top: -2px;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    border: 1px solid var(--var2);
-    border-radius: 4px;
-    padding: none;
-    min-width: 250px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+  display: none;
+  position: absolute;
+  border: 1px solid var(--var2);
+  border-radius: 4px;
+  padding: none;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    transition: all .1s ease-in-out;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: all 0.1s ease-in-out;
 }
 
 .dropdown a {
-    background: var(--var2);
-    color: var(--var1);
+  background: var(--var2);
+  color: var(--var1);
 }
 .dropdown a:hover {
-    background-color: var(--var4);
+  background-color: var(--var4);
 }
 
 .show {
-    display:block;
-    top: 58px;
+  display: block;
+  top: 58px;
 }
 
 .char-count {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
