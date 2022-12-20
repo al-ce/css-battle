@@ -1,0 +1,38 @@
+.twelve_body {
+    width: 400px;
+    height: 300px;
+}
+
+.twelve_body, .twelve_body div {
+    background: #F5D6B4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.twelve_body div {
+    width: 60px;
+    height: 30px;
+    border: #D86F45 solid 20px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom: none;
+    top: -25px
+}
+.twelve_body div:nth-of-type(odd) {
+    transform: rotate(180deg);
+    margin: -20px;
+    top: 25px;
+}
+.twelve_body span {
+    background:#D86F45;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 60px;
+    top: 20px;
+}
+#f {
+    right: -20px
+}

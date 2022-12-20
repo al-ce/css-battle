@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="../style.css" rel="stylesheet" />
-    <link href="5.css" rel="stylesheet" />
+    <link href="12.css" rel="stylesheet" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,7 +31,9 @@
       ><span> &nbsp;/&nbsp;</span>
 
       <div class="dropdown">
-        <button onclick="showDropdown()" class="dropbtn">#5. Acid Rain</button>
+        <button onclick="showDropdown()" class="dropbtn">
+          #12. Wiggly Moustache
+        </button>
 
         <div id="dropdownMenu" class="dropdown-content">
           <a href="1.html"> #1. Simply Square</a>
@@ -57,58 +59,67 @@
 
     <div class="solution-display">
       <div class="my-code">
-        <pre
-          class="language-markup line-numbers"
-        ><code><!--<div class="a"></div>
-<div class="b"></div>
-<div class="c"></div>
+        <pre class="language-markup line-numbers"><code><!--<div>
+  <span id="f"></span>
+</div>
+<div></div>
+<div>
+  <span></span>
+</div>
 <style>
-  body {
-    background: #0b2429;
+  body, div {
+    background: #F5D6B4;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  div {
-    width: 120px;
-    height: 120px;
-    background: #F3AC3C;
-    border-radius: 50% 0% 50% 50%;
-  }
-
-  .a, .c {
     position: relative;
   }
-  .a {
-    top: 60px;
-    left: 60px;
-    z-index: 3;
+  div {
+    width: 60px;
+    height: 30px;
+    border: #D86F45 solid 20px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom: none;
+    top: -25px
   }
-  .c {
-    top: -60px;
+  div:nth-of-type(odd) {
+    transform: rotate(180deg);
+    margin: -20px;
+    top: 25px;
+  }
+  span {
+    background:#D86F45;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
     right: 60px;
-    border-radius: 50% 50%;
+    top: 20px;
   }
-  .b{
-    background: #998235;
-    z-index: 2;
+  #f {
+    right: -20px
   }
 </style>
 --></code></pre>
       </div>
 
       <div class="my-solution-image">
-        <div class="five_body">
-          <div class="five_a"></div>
-          <div class="five_b"></div>
-          <div class="five_c"></div>
+        <div class="twelve_body">
+          <div>
+            <span id="f"></span>
+          </div>
+          <div></div>
+          <div>
+            <span></span>
+          </div>
         </div>
       </div>
     </div>
     <div class="footer">
-      <span>523 characters</span>
+      <span>778 characters</span>
       <span>
-        <a href="https://cssbattle.dev/play/5">@cssbattle.dev</a>
+        <a href="https://cssbattle.dev/play/7">@cssbattle.dev</a>
       </span>
     </div>
 

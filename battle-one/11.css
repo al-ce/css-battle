@@ -1,0 +1,37 @@
+.eleven_body {
+    width: 400px;
+    height: 300px;
+
+    background: #191210;
+  }
+.eleven_eye {
+    width: 300px;
+    height: 140px;
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+.eleven_eye div:nth-child(odd) {
+    width: 60px;
+    height: 30px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border: 20px solid #ECA03D;
+    border-bottom: 0;
+    position: relative;
+    top: -25px;
+  }
+#eleven_m {
+    width: 50px;
+    height: 50px;
+    background: #84271C;
+    border-radius: 50%;
+    border: #191210 solid 25px;
+    box-shadow: 0 0 0 20px #ECA03D;
+    z-index: 2;
+  }
+.eleven_eye div:first-child {
+    transform: rotate(180deg);
+    top: 25px;
+  }

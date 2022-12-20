@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="../style.css" rel="stylesheet" />
-    <link href="5.css" rel="stylesheet" />
+    <link href="11.css" rel="stylesheet" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,7 +31,9 @@
       ><span> &nbsp;/&nbsp;</span>
 
       <div class="dropdown">
-        <button onclick="showDropdown()" class="dropbtn">#5. Acid Rain</button>
+        <button onclick="showDropdown()" class="dropbtn">
+          #11. Eye Of Sauron
+        </button>
 
         <div id="dropdownMenu" class="dropdown-content">
           <a href="1.html"> #1. Simply Square</a>
@@ -57,58 +59,64 @@
 
     <div class="solution-display">
       <div class="my-code">
-        <pre
-          class="language-markup line-numbers"
-        ><code><!--<div class="a"></div>
-<div class="b"></div>
-<div class="c"></div>
+        <pre class="language-markup line-numbers"><code><!--<div class="eye">
+  <div></div>
+  <div id="m"></div>
+  <div></div>
+</div>
 <style>
-  body {
-    background: #0b2429;
+body {
+    background: #191210;
+  }
+.eye {
+    width: 300px;
+    height: 140px;
+    margin: 80px auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
   }
-  div {
-    width: 120px;
-    height: 120px;
-    background: #F3AC3C;
-    border-radius: 50% 0% 50% 50%;
-  }
-
-  .a, .c {
+.eye div:nth-child(odd) {
+    width: 60px;
+    height: 30px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border: 20px solid #ECA03D;
+    border-bottom: 0;
     position: relative;
+    top: -25px;
   }
-  .a {
-    top: 60px;
-    left: 60px;
-    z-index: 3;
-  }
-  .c {
-    top: -60px;
-    right: 60px;
-    border-radius: 50% 50%;
-  }
-  .b{
-    background: #998235;
+#m {
+    width: 50px;
+    height: 50px;
+    background: #84271C;
+    border-radius: 50%;
+    border: #191210 solid 25px;
+    box-shadow: 0 0 0 20px #ECA03D;
     z-index: 2;
+  }
+.eye div:first-child {
+    transform: rotate(180deg);
+    top: 25px;
   }
 </style>
 --></code></pre>
       </div>
 
       <div class="my-solution-image">
-        <div class="five_body">
-          <div class="five_a"></div>
-          <div class="five_b"></div>
-          <div class="five_c"></div>
+        <div class="eleven_body">
+          <div class="eleven_eye">
+            <div></div>
+            <div id="eleven_m"></div>
+            <div></div>
+          </div>
         </div>
       </div>
     </div>
     <div class="footer">
-      <span>523 characters</span>
+      <span>778 characters</span>
       <span>
-        <a href="https://cssbattle.dev/play/5">@cssbattle.dev</a>
+        <a href="https://cssbattle.dev/play/7">@cssbattle.dev</a>
       </span>
     </div>
 

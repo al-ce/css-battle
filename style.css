@@ -23,7 +23,7 @@ scrollbar-color: gray black;
 
 body {
     color: var(--var1);
-    background-color: black;
+    background-color: #171D23;
     font-family: 'IBM Plex Mono', sans-serif, monospace;
 }
 
@@ -43,9 +43,39 @@ a, a:visited {
 
 }
 
+
+svg {
+    width: 15px;
+    height: 15px;
+}
+
 .logo {
     width: 20%;
     alt: "CSS Battle Logo. Two curly braces enclosing an image of crossed swords followed by CSSBattle. Yellow on black.";
+}
+
+.info {
+    position: relative;
+}
+.explainer {
+    background: var(--var2);
+    text-align:justify;
+    box-sizing: border-box;
+    width: 400px;
+    height: 300px;
+    border: 2px gray solid;
+    border-radius: 8px;
+    padding: 2px 15px;
+    visibility: hidden;
+    display: none;
+    position: absolute;
+    top: 25px;
+    left: 300px;
+    z-index: 99;
+}
+.info:hover .explainer {
+    visibility: visible;
+    display: block;
 }
 
 .previews-container {
