@@ -2,7 +2,6 @@
     width: 400px;
     height: 300px;
     position: relative;
-    z-index: -2;
 
     background: #62306d;
 }
@@ -16,6 +15,7 @@
     flex-wrap: wrap-reverse;
     justify-content: center;
 }
+
 .ten_spheres div, .ten_cloaks div {
     width: 100px;
     height: 100px;
@@ -25,6 +25,7 @@
     background: #e38f66;
     border: 20px solid #aa445f;
     border-radius: 50%;
+    z-index: 2;
 }
 .ten_spheres div:first-child {
     margin-right: 100px;
@@ -40,5 +41,4 @@
 }
 .ten_cloaks div {
     background: #f7ec7d;
-    z-index: -1;
 }

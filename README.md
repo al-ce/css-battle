@@ -8,7 +8,7 @@ https://al-ce.github.io/css-battle/
 
 # About
 
-This repo contains a [GitHub deployment](https://al-ce.github.io/css-battle/) of a page I buit with my solutions for target challenges on [cssbattle.dev](cssbattle.dev).
+This repo contains a [github-pages deployment](https://al-ce.github.io/css-battle/) of a page I buit with my solutions for target challenges on [cssbattle.dev](cssbattle.dev).
 I wanted some basic HTML/CSS practice to build on top of what I was practicing at CSSBattle.
 
 On each Target's page, you'll find syntax-highlighted CSS/HTML that matches my solutions on CSSBattle as well as the recreated Target using CSS. The layout mimics the design of the CSSBattle.dev challenges.
