@@ -49,6 +49,7 @@ svg {
 }
 
 .logo {
+  margin-top: 50px;
   width: 20%;
   alt: "CSS Battle Logo. Two curly braces enclosing an image of crossed swords followed by CSSBattle. Yellow on black.";
 }
