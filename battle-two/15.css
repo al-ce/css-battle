@@ -1,0 +1,30 @@
+.fifteen_body, #c {
+  width: 400px;
+  height: 300px;
+  position: relative;
+
+  background: #09042a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fifteen_body div {
+  width: 150px;
+  height: 150px;
+  background: #7b3f61;
+  border-radius: 50%;
+  position: absolute;
+  left: 75px;
+}
+#r {
+  left: 175px;
+  background: #e78481;
+}
+#c {
+  width: 80px;
+  height: 80px;
+  border-radius: 0 75px;
+  transform: rotate(45deg);
+  position: absolute; /* not in the og code b/c body doesn't need to be positioned relatively there */
+  left: 160px;
+}

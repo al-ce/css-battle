@@ -1,0 +1,32 @@
+.seventeen_body {
+    width: 400px;
+    height: 300px;
+}
+
+.seventeen_body, .seventeen_body span, .seventeen_body div {
+    background: #09042A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seventeen_body div {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: solid #E78481 10px;
+    z-index: 2;
+}
+.seventeen_body span {
+    flex-direction: column;
+    margin: -20px;
+}
+.seventeen_body span div {
+    background: #F5BB9C;
+    border: #09042A 10px solid;
+}
+#c {
+    background: #E78481;
+    margin: -12px;
+    width: 60px;
+    height: 50px;
+}

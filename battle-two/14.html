@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="../style.css" rel="stylesheet" />
-    <link href="12.css" rel="stylesheet" />
+    <link href="14.css" rel="stylesheet" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,27 +27,21 @@
         />
       </a>
 
-      <span>/&nbsp;</span><a href="../index.html">Battle #1</a
+      <span>/&nbsp;</span><a href="../index.html">Battle #2</a
       ><span> &nbsp;/&nbsp;</span>
 
       <div class="dropdown">
         <button onclick="showDropdown()" class="dropbtn">
-          #12. Wiggly Moustache
+          #14. Web Maker Logo
         </button>
 
         <div id="dropdownMenu" class="dropdown-content">
-          <a href="1.html"> #1. Simply Square</a>
-          <a href="2.html"> #2. Carrom</a>
-          <a href="3.html"> #3. Push Button</a>
-          <a href="4.html"> #4. Ups n Downs</a>
-          <a href="5.html"> #5. Acid Rain</a>
-          <a href="6.html"> #6. Missing Slice</a>
-          <a href="7.html"> #7. Leafy Trail</a>
-          <a href="8.html"> #8. Forking Crazy</a>
-          <a href="9.html"> #9. Tesseract</a>
-          <a href="10.html"> #10. Cloaked Spirits</a>
-          <a href="11.html"> #11. Eye Of Sauron</a>
-          <a href="12.html"> #12. Wiggly Moustache</a>
+          <a href="13.html"> #13. Totally Triangle</a>
+          <a href="14.html"> #14. Web Maker Logo</a>
+          <a href="15.html"> #15. Overlap</a>
+          <a href="16.html"> #16. Eye of the Tiger</a>
+          <a href="17.html"> #17. Fidget Spinner</a>
+          <a href="18.html"> #18. Matrix</a>
         </div>
       </div>
     </div>
@@ -59,65 +53,59 @@
 
     <div class="solution-display">
       <div class="my-code">
-        <pre class="language-markup line-numbers"><code><!--<div>
-  <span id="f"></span>
-</div>
-<div></div>
-<div>
-  <span></span>
-</div>
+        <pre class="language-markup line-numbers"><code><!--<span id="l"><div></div><div></div></span>
+<span><div></div><div></div></span>
 <style>
-  body, div {
-    background: #F5D6B4;
+  body {
+    background: #F2F2B6;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  span, div {
     position: relative;
   }
   div {
-    width: 60px;
-    height: 30px;
-    border: #D86F45 solid 20px;
-    border-top-left-radius: 60px;
-    border-top-right-radius: 60px;
-    border-bottom: none;
-    top: -25px
-  }
-  div:nth-of-type(odd) {
-    transform: rotate(180deg);
-    margin: -20px;
-    top: 25px;
-  }
-  span {
-    background:#D86F45;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 130px solid #FF6D00;
+    right: 10px;
+    }
+  div:nth-of-type(even) {
+    border-bottom-color: #FD4602;
     position: absolute;
-    right: 60px;
-    top: 20px;
+    top: 0;
+    right: 30px;
   }
-  #f {
-    right: -20px
+  #l div {
+    transform: scale(-1);
+    left: 10px;
+    z-index: 2;
+  }
+  #l div:last-child {
+    left: 30px;
+    z-index: 1;
   }
 </style>
 --></code></pre>
       </div>
 
       <div class="my-solution-image">
-        <div class="twelve_body">
-          <div>
-            <span id="f"></span>
-          </div>
-          <div></div>
-          <div>
-            <span></span>
-          </div>
+        <div class="fourteen_body">
+            <span id="l">
+                <div></div><div></div>
+            </span>
+            <span>
+                <div></div><div></div>
+            </span>
         </div>
       </div>
+
     </div>
     <div class="footer">
-      <span>202 characters</span>
+      <span>679 characters</span>
       <span>
         <a href="https://cssbattle.dev/play/7">@cssbattle.dev</a>
       </span>

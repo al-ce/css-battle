@@ -1,0 +1,20 @@
+.eighteen_body {
+    width: 400px;
+    height: 300px;
+
+    background: #5C434C;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0;
+  }
+  x {
+    width: 80px;
+    height: 80px;
+    background: #F09462;
+    margin: 10px;
+    border-radius: 80px 0 0 0;
+  }
+  x:nth-child(even) {
+    background: #F5D6B4;
+  }
